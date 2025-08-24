@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- This tag ensures the game scales correctly on mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" href="icon/icon.png" type="image/png">
+        <link rel="apple-touch-icon" href="icon/icon.png">
+        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
+        <!-- This links to your new stylesheet for responsive scaling -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Dwellers Empty Path</title>
+    </head>
+    <body style="background-color: black">
+        <script type="text/javascript" src="js/libs/pixi.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
+        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
+        <script type="text/javascript" src="js/libs/lz-string.js"></script>
+        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
+        <script type="text/javascript" src="js/rpg_core.js"></script>
+        <script type="text/javascript" src="js/rpg_managers.js"></script>
+        <script type="text/javascript" src="js/rpg_objects.js"></script>
+        <script type="text/javascript" src="js/rpg_scenes.js"></script>
+        <script type="text/javascript" src="js/rpg_sprites.js"></script>
+        <script type="text/javascript" src="js/rpg_windows.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- 
+        It enables the engine's native stretch-to-fit
+        mode and then immediately calls the engine's own resize function to force
+        a correct layout calculation. This harmonizes scaling and touch input.
+        -->
+        <script>
+            (function() {
+                var _alias_scene_boot_start = Scene_Boot.prototype.start;
+                Scene_Boot.prototype.start = function() {
+                    _alias_scene_boot_start.call(this);
+                    // Force the engine's stretch mode to be active
+                    Graphics._stretchEnabled = true;
+                    // Manually trigger the engine's own window resize logic
+                    Graphics._onWindowResize();
+                };
+            })();
+        </script>
+    </body>
+</html>

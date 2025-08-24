@@ -1,0 +1,16 @@
+/* --- Core Page Styling --- */
+html, body {
+    /* Set a black background to prevent white flashes */
+    background-color: black;
+    
+    /* Remove default browser margins and padding */
+    margin: 0;
+    padding: 0;
+
+    /* Disable all scrollbars */
+    overflow: hidden;
+
+    /* Make the body fill the entire screen */
+    width: 100%;
+    height: 100%;
+}
