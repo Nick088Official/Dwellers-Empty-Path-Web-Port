@@ -14,7 +14,7 @@ This guide provides step-by-step instructions for modifying the game to run corr
 
 ### Prerequisites
 
-1.  **Get the Game Files:** [Download the original game from the creator's itch.io page](https://temch.itch.io/dwellers-empty-path) and extract the files.
+1.  **Get the Game Files:** [Download the original game from the creator's itch.io page](https://tuyoki.itch.io/dwellers-empty-path) and extract the files.
 2.  **Get the Decrypter (Optional, for mobile audio compatibility):** [Download RPGMakerDecrypter Latest Release Binaries](https://github.com/uuksu/RPGMakerDecrypter/releases/latest) (.exe for windows, the other cli file is for MacOS/Linux)
 3.  **A Text Editor:** To modify files (e.g., VS Code, Sublime Text, Notepad).
 4.  **Python (for testing):** Having [Python](https://www.python.org/downloads/) installed is the easiest way to run a local server to test the game.
@@ -242,4 +242,4 @@ For pure educational purposes, fun, and to make this game accessible on more pla
 
 
 ## Credits
--   **Game:** [Dweller's Empty Path by Temmie Chang](https://temch.itch.io/dwellers-empty-path)
+-   **Game:** [Dweller's Empty Path by Temmie Chang](https://tuyoki.itch.io/dwellers-empty-path)
