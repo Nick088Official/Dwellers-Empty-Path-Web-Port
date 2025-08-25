@@ -235,6 +235,12 @@ Once you have made the modifications, you need to test them using a local web se
 
 The game should now start and be fully playable on both desktop and mobile (if you have done the optional mobile audio compatibility fixes).
 
+### Part F: Bypass Jekyll GitHub Pages for Underscore Files (Optional)
+
+This is only for people who are going to use GitHub Pages, which automatically uses Jekyll to build static blog websites. The issue is that Jekyll ignores files that start with '_', which some of the game assets do, so we will not use Jekyll.
+
+1. In the root project folder, add an emtpy file named `.nojekyll`.
+
 
 ## Why?
 
