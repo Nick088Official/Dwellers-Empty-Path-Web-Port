@@ -123,14 +123,14 @@ On mobile, the game tries to load `.m4a` audio files by default, but the decrypt
 1.  Ensure you have **FFmpeg installed and added to your system's PATH**.
 2.  Open a CMD/Terminal in your **root game folder** (the one containing the `www` folder).
 3.  Paste and run the following one-liner command. It will find every `.ogg` file and create an `.m4a` copy next to it:
-- For Windows:
-    ```cmd
-    for /R "www\audio" %F in (*.ogg) do ffmpeg -i "%F" -v quiet -stats "%~dpnF.m4a"
-    ```
-- For macOS & Linux:
-    ```bash
-    find www/audio -type f -name "*.ogg" -exec sh -c 'ffmpeg -i "$0" -v quiet -stats "${0%.ogg}.m4a"' {} \;
-    ```
+    - For Windows:
+        ```cmd
+        for /R "www\audio" %F in (*.ogg) do ffmpeg -i "%F" -v quiet -stats "%~dpnF.m4a"
+        ```
+    - For macOS & Linux:
+        ```bash
+        find www/audio -type f -name "*.ogg" -exec sh -c 'ffmpeg -i "$0" -v quiet -stats "${0%.ogg}.m4a"' {} \;
+        ```
 
 ### Part D: Add Responsive Scaling (Fix Zoom & Scrolling)
 
