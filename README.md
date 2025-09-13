@@ -248,4 +248,6 @@ For pure educational purposes, fun, and to make this game accessible on more pla
 
 
 ## Credits
--   **Game:** [Dweller's Empty Path by Temmie Chang](https://tuyoki.itch.io/dwellers-empty-path)
+- **Game:** All credit for the game's creation goes to **Temmie Chang**. Please support the original creator by visiting the [official itch.io page](https://tuyoki.itch.io/dwellers-empty-path).
+- **Web Port:** This web-based version was ported by [Nick088](https://linktr.ee/nick088).
+- **Game Engine:** RPG Maker MV.
